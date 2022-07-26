@@ -4,7 +4,7 @@ document.querySelector('.chose-size').addEventListener('click', promptMessage);
 
 function addTransition(cell) {
     cell.addEventListener('mouseover', function () {
-        this.classList.add('cell-hover');
+        this.style.background = randomRgb();
     });
 }
 
@@ -30,4 +30,11 @@ function createGrid(n) {
 
     const cells = document.querySelectorAll('.cell');
     cells.forEach(addTransition);
+}
+
+function randomRgb() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
 }

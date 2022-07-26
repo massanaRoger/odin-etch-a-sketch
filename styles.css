@@ -22,7 +22,3 @@ body {
 .cell {
     border: 1px solid black;
 }
-
-.cell-hover {
-    background: #d23ea3;
-}
