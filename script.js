@@ -7,3 +7,12 @@ for (let i = 0; i < COLUMNS * ROWS; i++) {
     cell.classList.add('cell');
     container.appendChild(cell);
 }
+
+const cells = document.querySelectorAll('.cell');
+cells.forEach(addTransition);
+
+function addTransition(cell) {
+    cell.addEventListener('mouseover', function () {
+        this.classList.add('cell-hover');
+    });
+}
