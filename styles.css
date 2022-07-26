@@ -19,3 +19,13 @@ body {
     padding: 10px;
     border: 1px solid black;
 }
+
+.cell:hover {
+    background-color: #d23ea3;
+    transition: background-color 0.2s;
+}
+
+.cell-end-transition {
+    background: white;
+    transition: background-color 1s;
+}
